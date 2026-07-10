@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamLens — Status</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: #161f33;
+        --card-border: #26314a;
+        --text: #e8ecf5;
+        --muted: #8b96ac;
+        --accent: #6366f1;
+        --accent-2: #818cf8;
+        --ok: #22c55e;
+        --warn: #f59e0b;
+        --danger: #ef4444;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: linear-gradient(180deg, #0b1220 0%, #0d1526 100%);
+        color: var(--text);
+      }
+      body { padding: 22px; overflow-x: hidden; }
+
+      .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+      .brand .dot {
+        width: 10px; height: 10px; border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+      }
+      h1 { margin: 0; font-size: 18px; letter-spacing: 0.2px; }
+      p.sub { margin: 2px 0 18px 20px; color: var(--muted); font-size: 12.5px; }
+
+      .status-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 12.5px;
+        font-weight: 600;
+        border: 1px solid transparent;
+      }
+      .pill .ping {
+        width: 7px; height: 7px; border-radius: 50%;
+        position: relative;
+      }
+      .pill.active { color: var(--ok); background: rgba(34, 197, 94, 0.12); border-color: rgba(34, 197, 94, 0.25); }
+      .pill.active .ping { background: var(--ok); }
+      .pill.active .ping::after {
+        content: '';
+        position: absolute; inset: -4px;
+        border-radius: 50%;
+        background: var(--ok);
+        opacity: 0.5;
+        animation: pulse 1.8s ease-out infinite;
+      }
+      .pill.paused { color: var(--warn); background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.25); }
+      .pill.paused .ping { background: var(--warn); }
+      .pill.off { color: var(--muted); background: rgba(139, 150, 172, 0.1); border-color: rgba(139, 150, 172, 0.2); }
+      .pill.off .ping { background: var(--muted); }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(2.4); opacity: 0; }
+      }
+
+      button.toggle {
+        border: none;
+        border-radius: 999px;
+        padding: 8px 16px;
+        font-size: 12.5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: filter 0.15s ease, transform 0.05s ease;
+      }
+      button.toggle:active { transform: scale(0.97); }
+      button.toggle:hover { filter: brightness(1.12); }
+      button.toggle:disabled { opacity: 0.5; cursor: default; }
+      button.toggle.pause { background: rgba(245, 158, 11, 0.16); color: var(--warn); }
+      button.toggle.resume { background: var(--accent); color: white; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .stat {
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        padding: 12px 14px;
+      }
+      .stat .row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+      .stat .icon { font-size: 13px; line-height: 1; }
+      .stat .label { font-size: 11.5px; color: var(--muted); }
+      .stat .value { font-size: 18px; font-weight: 700; letter-spacing: -0.2px; }
+
+      .goal-card {
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        padding: 14px;
+        margin-bottom: 14px;
+      }
+      .goal-card .head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+      .goal-card .label { font-size: 11.5px; color: var(--muted); }
+      .goal-card .pct { font-size: 12px; color: var(--accent-2); font-weight: 700; }
+      .bar-track {
+        background: #0b1220;
+        border-radius: 999px;
+        height: 8px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border: 1px solid var(--card-border);
+      }
+      .bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        border-radius: 999px;
+        transition: width 0.4s ease;
+      }
+      .goal-text { font-size: 12.5px; color: var(--text); }
+      .goal-text.done { color: var(--ok); font-weight: 600; }
+
+      .shot-card {
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .shot-card img {
+        width: 100%;
+        display: block;
+        background: #0b1220;
+      }
+      .shot-meta {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 9px 13px;
+        font-size: 11.5px;
+        color: var(--muted);
+        border-top: 1px solid var(--card-border);
+      }
+
+      .empty {
+        color: var(--muted);
+        font-size: 12.5px;
+        padding: 30px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>TeamLens</h1>
+    </div>
+    <p class="sub">Your activity today</p>
+
+    <div id="content">
+      <div class="empty">Loading…</div>
+    </div>
+
+    <script>
+      const $ = (sel) => document.querySelector(sel);
+
+      function fmtHours(sec) {
+        const h = Math.floor(sec / 3600);
+        const m = Math.round((sec % 3600) / 60);
+        return `${h}h ${m}m`;
+      }
+
+      function fmtTime(iso) {
+        return new Date(iso).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      }
+
+      async function onToggleClick() {
+        const btn = $('#toggleBtn');
+        if (!btn) return;
+        btn.disabled = true;
+        try {
+          if (btn.dataset.action === 'pause') await window.teamlens.pauseMonitoring();
+          else await window.teamlens.resumeMonitoring();
+        } finally {
+          await refresh();
+        }
+      }
+
+      function render(data) {
+        if (!data.enrolled) {
+          $('#content').innerHTML = '<div class="empty">Device not connected.</div>';
+          return;
+        }
+
+        let statusClass, statusLabel, toggleHtml;
+        if (!data.monitoringEnabled) {
+          statusClass = 'off';
+          statusLabel = 'Monitoring disabled by admin';
+          toggleHtml = '';
+        } else if (data.monitoringActive) {
+          statusClass = 'active';
+          statusLabel = 'Monitoring active';
+          toggleHtml = '<button id="toggleBtn" class="toggle pause" data-action="pause">Pause tracker</button>';
+        } else if (data.userPaused) {
+          statusClass = 'paused';
+          statusLabel = 'Paused by you';
+          toggleHtml = '<button id="toggleBtn" class="toggle resume" data-action="resume">Resume tracker</button>';
+        } else {
+          statusClass = 'off';
+          statusLabel = 'Starting…';
+          toggleHtml = '';
+        }
+
+        const s = data.stats;
+
+        let goalHtml = '';
+        if (s && s.dailyGoalHours) {
+          const goalSec = s.dailyGoalHours * 3600;
+          const pct = Math.min(100, Math.round((s.activeSec / goalSec) * 100));
+          const remainingSec = Math.max(0, goalSec - s.activeSec);
+          const done = remainingSec <= 0;
+          const goalText = done
+            ? `Goal reached — ${s.dailyGoalHours}h`
+            : `${fmtHours(remainingSec)} left to reach your ${s.dailyGoalHours}h goal`;
+          goalHtml = `
+            <div class="goal-card">
+              <div class="head">
+                <span class="label">Daily goal</span>
+                <span class="pct">${pct}%</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+              <div class="goal-text ${done ? 'done' : ''}">${goalText}</div>
+            </div>
+          `;
+        }
+
+        const shot = data.lastScreenshot;
+        const shotHtml = shot
+          ? `
+            <div class="shot-card">
+              <img src="${shot.dataUrl}" alt="Last screenshot" />
+              <div class="shot-meta">🖼️ Last screenshot: ${fmtTime(shot.capturedAt)}</div>
+            </div>
+          `
+          : '<div class="shot-card"><div class="empty">No screenshot captured yet.</div></div>';
+
+        $('#content').innerHTML = `
+          <div class="status-row">
+            <span class="pill ${statusClass}"><span class="ping"></span>${statusLabel}</span>
+            ${toggleHtml}
+          </div>
+          <div class="grid">
+            <div class="stat"><div class="row"><span class="icon">🟢</span><span class="label">Active</span></div><div class="value">${s ? fmtHours(s.activeSec) : '—'}</div></div>
+            <div class="stat"><div class="row"><span class="icon">💤</span><span class="label">Idle</span></div><div class="value">${s ? fmtHours(s.idleSec) : '—'}</div></div>
+            <div class="stat"><div class="row"><span class="icon">⏸️</span><span class="label">Paused</span></div><div class="value">${s ? fmtHours(s.pausedSec) : '—'}</div></div>
+            <div class="stat"><div class="row"><span class="icon">📊</span><span class="label">Activity %</span></div><div class="value">${s ? s.activityPct + '%' : '—'}</div></div>
+          </div>
+          ${goalHtml}
+          ${shotHtml}
+        `;
+
+        const btn = $('#toggleBtn');
+        if (btn) btn.addEventListener('click', onToggleClick);
+      }
+
+      async function refresh() {
+        try {
+          const data = await window.teamlens.getStatus();
+          render(data);
+        } catch (err) {
+          $('#content').innerHTML = '<div class="empty">Unable to load status.</div>';
+        }
+      }
+
+      refresh();
+      setInterval(refresh, 30000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+# Chromium/Electron cache and runtime data
+DawnGraphiteCache/
+DawnWebGPUCache/
+GPUCache/
+Cache/
+Code Cache/
+blob_storage/
+Network/
+Local Storage/
+Session Storage/
+Shared Dictionary/
+SharedStorage
+SharedStorage-wal
+logs/
+
+# Electron lock and runtime files
+lockfile
+DIPS
+DIPS-wal
+Local State
+
+# App-specific runtime files
+next-shot-at.json
+queue-index.json
+queue-shots/

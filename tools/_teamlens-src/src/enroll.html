@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamLens Agent — Setup</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #6366f1;
+        --accent-hover: #4f46e5;
+        --border: #334155;
+        --ok: #22c55e;
+        --err: #ef4444;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 32px;
+        width: 420px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      }
+      h1 { margin: 0 0 4px; font-size: 20px; }
+      p.sub { margin: 0 0 24px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+      label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+      input {
+        width: 100%;
+        padding: 11px 12px;
+        background: #0f172a;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text);
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+      input:focus { outline: none; border-color: var(--accent); }
+      button {
+        width: 100%;
+        padding: 12px;
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:hover { background: var(--accent-hover); }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+      .status { margin-top: 16px; font-size: 13px; min-height: 18px; }
+      .status.ok { color: var(--ok); }
+      .status.err { color: var(--err); }
+      .notice {
+        margin-top: 20px;
+        padding: 12px;
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 8px;
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>TeamLens Agent</h1>
+      <p class="sub">
+        Enter the enrollment code provided by your administrator to connect this
+        device. Your team has been informed that activity on this work machine is
+        monitored during working hours.
+      </p>
+
+      <label for="server">Server URL</label>
+      <input id="server" type="text" placeholder="https://monitor.opashsoftware.com" />
+
+      <label for="code">Enrollment Code</label>
+      <input id="code" type="text" placeholder="Paste code here" />
+
+      <button id="enrollBtn">Connect Device</button>
+      <div id="status" class="status"></div>
+
+      <div class="notice">
+        Once connected, this app runs in your system tray. A tray icon stays
+        visible whenever monitoring is active. You can quit it from the tray menu.
+      </div>
+    </div>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const statusEl = $('status');
+
+      window.teamlens.getServerUrl().then((url) => {
+        if (url) $('server').value = url;
+      });
+
+      $('enrollBtn').addEventListener('click', async () => {
+        const serverUrl = $('server').value.trim();
+        const code = $('code').value.trim();
+        if (!serverUrl || !code) {
+          statusEl.className = 'status err';
+          statusEl.textContent = 'Server URL and code are required.';
+          return;
+        }
+        $('enrollBtn').disabled = true;
+        statusEl.className = 'status';
+        statusEl.textContent = 'Connecting…';
+
+        const result = await window.teamlens.enroll({ serverUrl, code });
+        if (result.ok) {
+          statusEl.className = 'status ok';
+          statusEl.textContent = 'Connected! This window will close…';
+        } else {
+          $('enrollBtn').disabled = false;
+          statusEl.className = 'status err';
+          statusEl.textContent = result.error || 'Enrollment failed.';
+        }
+      });
+    </script>
+  </body>
+</html>

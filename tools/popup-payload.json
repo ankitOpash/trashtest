@@ -1,0 +1,5 @@
+﻿{
+    "AutoCloseSec":  30,
+    "Title":  "TeamLens Screenshot Alert",
+    "Message":  "TeamLens may take a screenshot soon.\r\n\r\nPlease switch to your work window.\r\n\r\nAnother reminder may come ~1 minute before capture.\r\n\r\nAuto-closes in 30 seconds."
+}

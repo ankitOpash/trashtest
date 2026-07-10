@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TeamLens Screenshot</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      padding: 14px 18px;
+      background: #16213e;
+      border-bottom: 1px solid #0f3460;
+    }
+    header h1 { margin: 0 0 6px; font-size: 18px; color: #e94560; }
+    header p { margin: 0; font-size: 13px; color: #aab; }
+    .preview-wrap {
+      flex: 1;
+      overflow: auto;
+      padding: 12px;
+      text-align: center;
+      background: #0d0d1a;
+    }
+    #preview {
+      max-width: 100%;
+      border: 2px solid #0f3460;
+      border-radius: 6px;
+      background: #000;
+    }
+    .meta { font-size: 12px; color: #889; margin-top: 8px; }
+    footer {
+      padding: 14px 18px;
+      background: #16213e;
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      border-top: 1px solid #0f3460;
+    }
+    button {
+      font-size: 14px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    #btnPost { background: #e94560; color: #fff; }
+    #btnPost:hover { background: #ff6b6b; }
+    #btnSkip { background: #333; color: #ccc; }
+    #btnSkip:hover { background: #444; }
+    #countdown { margin-right: auto; align-self: center; font-size: 13px; color: #e94560; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>May I post this screenshot?</h1>
+    <p>TeamLens wants to send this image to your monitor. Review it first.</p>
+  </header>
+  <div class="preview-wrap">
+    <img id="preview" alt="Screenshot preview" />
+    <div class="meta" id="meta"></div>
+  </div>
+  <footer>
+    <span id="countdown">Auto-skip in 60s</span>
+    <button id="btnSkip" type="button">Skip this time</button>
+    <button id="btnPost" type="button">Yes, post it</button>
+  </footer>
+  <script>
+    let left = 60;
+    const cd = document.getElementById('countdown');
+    const tick = setInterval(() => {
+      left--;
+      cd.textContent = left > 0 ? `Auto-skip in ${left}s` : 'Skipping...';
+      if (left <= 0) clearInterval(tick);
+    }, 1000);
+
+    window.consent.onData((data) => {
+      document.getElementById('preview').src = data.dataUrl;
+      const parts = [];
+      if (data.activeApp) parts.push('App: ' + data.activeApp);
+      if (data.windowTitle) parts.push('Window: ' + data.windowTitle);
+      if (data.width) parts.push(data.width + '×' + data.height);
+      document.getElementById('meta').textContent = parts.join(' · ');
+    });
+
+    document.getElementById('btnPost').onclick = () => {
+      clearInterval(tick);
+      window.consent.respond(true);
+    };
+    document.getElementById('btnSkip').onclick = () => {
+      clearInterval(tick);
+      window.consent.respond(false);
+    };
+  </script>
+</body>
+</html>

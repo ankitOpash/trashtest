@@ -1,0 +1,47 @@
+{
+	"serverUrl": "https://monitor.opashsoftware.com",
+	"deviceToken": "dev_zEEsKUGlT6Prz8ygoLhEulxE_OOr8dhyS9z8ZVrazXfRshqz",
+	"deviceId": "6a4de85475a01151f67d98d7",
+	"userId": "6a4de4c975a01151f67d9079",
+	"policy": {
+		"minIntervalSec": 300,
+		"maxIntervalSec": 600,
+		"idleThresholdSec": 600
+	},
+	"monitoringEnabled": true,
+	"privateApps": [
+		"WhatsApp"
+	],
+	"currentProjectId": "6a4faf4db823daa032718893",
+	"currentProjectName": "Methaq Takaful Insurance",
+	"projects": [
+		{
+			"_id": "6a4fb765892152f7ec676b8e",
+			"name": "DPS",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a4faf4db823daa032718893",
+			"name": "Methaq Takaful Insurance",
+			"client": "Tony Naief",
+			"color": "#436ccb"
+		},
+		{
+			"_id": "6a4fb775892152f7ec676b98",
+			"name": "Remitzo",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a4fb782892152f7ec676b9f",
+			"name": "VIN Decoding & Valuation",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a4faf67a8bcb009a60f897a",
+			"name": "eSanad",
+			"client": "Anas",
+			"color": "#e164f2"
+		}
+	],
+	"currentMemo": null
+}

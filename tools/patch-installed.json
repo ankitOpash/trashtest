@@ -1,0 +1,8 @@
+﻿{
+    "features":  [
+                     "exact-next-shot",
+                     "consent-preview"
+                 ],
+    "version":  "1.0.9-consent",
+    "installedAt":  "2026-07-09T19:09:57.6346840+05:30"
+}

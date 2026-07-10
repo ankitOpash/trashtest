@@ -1,0 +1,628 @@
+﻿[2026-07-09 12:09:54] === SS Warning tool started (warn 60s before earliest next shot) ===
+[2026-07-09 12:09:55] Startup: warning window already open (last shot at 12:04:37)
+[2026-07-09 12:09:55] Toast shown: TeamLens Screenshot Warning
+[2026-07-09 12:12:04] Warning scheduled at 12:16:04 (240 s after screenshot captured)
+[2026-07-09 12:12:23] Startup task installed: TeamLens-SS-Warning
+[2026-07-09 12:16:04] Toast shown: TeamLens Screenshot Warning
+[2026-07-09 12:17:17] Showing warning alert: TeamLens Screenshot Warning
+[2026-07-09 12:17:17] Popup launched
+[2026-07-09 12:17:18] Toast also sent
+[2026-07-09 12:17:22] Startup task installed: TeamLens-SS-Warning
+[2026-07-09 12:17:23] === SS Warning tool started (warn 60s before earliest next shot) ===
+[2026-07-09 12:17:23] Startup: warning window already open (last shot at 12:12:04)
+[2026-07-09 12:17:23] Showing warning alert: TeamLens Screenshot Warning
+[2026-07-09 12:17:24] Popup launched
+[2026-07-09 12:17:24] Toast also sent
+[2026-07-09 12:21:38] Warning scheduled at 12:25:38 (240 s after screenshot captured)
+[2026-07-09 12:25:39] Showing warning alert: TeamLens Screenshot Warning
+[2026-07-09 12:25:40] Popup launched
+[2026-07-09 12:25:44] Toast also sent
+[2026-07-09 12:26:58] Warning scheduled at 12:30:58 (240 s after screenshot captured)
+[2026-07-09 12:30:58] Showing warning alert: TeamLens Screenshot Warning
+[2026-07-09 12:30:59] Popup launched
+[2026-07-09 12:31:01] Toast also sent
+[2026-07-09 12:36:34] Warning scheduled at 12:40:33 (240 s after screenshot captured)
+[2026-07-09 12:40:34] Showing warning alert: TeamLens Screenshot Warning
+[2026-07-09 12:40:34] Popup launched
+[2026-07-09 12:40:34] Toast also sent
+[2026-07-09 12:40:44] Startup task installed: TeamLens-SS-Warning
+[2026-07-09 12:41:34] === SS Warning v2 started (phase1 + repeat reminders, warn 60s) ===
+[2026-07-09 12:41:34] Scheduled from 12:36:33: phase1=12:40:33, phase2=12:44:33, deadline=12:46:33 (startup resume)
+[2026-07-09 12:41:34] Startup: waiting for phase2 at 12:44:33
+[2026-07-09 12:42:02] Startup task installed: TeamLens-SS-Warning
+[2026-07-09 12:42:02] Watchdog task installed: TeamLens-SS-Warning-Watchdog (every 5 min)
+[2026-07-09 12:42:03] === SS Warning v2 started (phase1 + repeat reminders, warn 60s) ===
+[2026-07-09 12:42:03] Scheduled from 12:36:33: phase1=12:40:33, phase2=12:44:33, deadline=12:46:33 (startup resume)
+[2026-07-09 12:42:03] Startup: waiting for phase2 at 12:44:33
+[2026-07-09 12:44:34] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 12:44:34] Popup launched (PID 21892)
+[2026-07-09 12:44:34] Repeat warning shown; next at 12:45:34
+[2026-07-09 12:45:34] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 12:45:34] Popup launched (PID 21952)
+[2026-07-09 12:45:34] Repeat warning shown; next at 12:46:34
+[2026-07-09 12:45:40] Scheduled from 12:45:40: phase1=12:49:40, phase2=12:53:40, deadline=12:55:40 (screenshot captured)
+[2026-07-09 12:49:40] Showing warning: Screenshot may happen soon (earliest window). Stay on a safe screen.
+[2026-07-09 12:49:40] Popup launched (PID 21384)
+[2026-07-09 12:49:40] Phase1 shown; phase2 at 12:53:40
+[2026-07-09 12:53:40] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 12:53:40] Popup launched (PID 4956)
+[2026-07-09 12:53:40] Repeat warning shown; next at 12:54:40
+[2026-07-09 12:54:40] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 12:54:40] Popup launched (PID 19236)
+[2026-07-09 12:54:40] Repeat warning shown; next at 12:55:40
+[2026-07-09 12:55:00] Scheduled from 12:55:00: phase1=12:59:00, phase2=13:03:00, deadline=13:05:00 (screenshot captured)
+[2026-07-09 12:59:00] Showing warning: Screenshot may happen soon (earliest window). Stay on a safe screen.
+[2026-07-09 12:59:00] Popup launched (PID 5512)
+[2026-07-09 12:59:00] Phase1 shown; phase2 at 13:03:00
+[2026-07-09 13:01:18] Scheduled from 13:01:18: phase1=13:05:18, phase2=13:09:18, deadline=13:11:18 (screenshot captured)
+[2026-07-09 13:04:26] === SS Warning v3 started (repeat every 60s after first warn, warn 60s) ===
+[2026-07-09 13:04:26] Scheduled from 13:01:18: first=13:05:18, repeat every 60s, deadline=13:11:18 (startup resume)
+[2026-07-09 13:05:18] Showing warning: Screenshot may happen in about 1 minute. Stay on a safe screen.
+[2026-07-09 13:05:18] Popup launched (PID 8280)
+[2026-07-09 13:05:18] First warning shown; repeating every 60s
+[2026-07-09 13:06:18] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:06:18] Popup launched (PID 12368)
+[2026-07-09 13:06:18] Repeat warning shown; next at 13:07:18
+[2026-07-09 13:06:50] Scheduled from 13:06:50: first=13:10:50, repeat every 60s, deadline=13:16:50 (screenshot captured)
+[2026-07-09 13:10:50] Showing warning: Screenshot may happen in about 1 minute. Stay on a safe screen.
+[2026-07-09 13:10:50] Popup launched (PID 8512)
+[2026-07-09 13:10:50] First warning shown; repeating every 60s
+[2026-07-09 13:11:50] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:11:50] Popup launched (PID 2800)
+[2026-07-09 13:11:50] Repeat warning shown; next at 13:12:50
+[2026-07-09 13:12:51] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:12:51] Popup launched (PID 17876)
+[2026-07-09 13:12:51] Repeat warning shown; next at 13:13:51
+[2026-07-09 13:13:51] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:13:51] Popup launched (PID 21000)
+[2026-07-09 13:13:51] Repeat warning shown; next at 13:14:51
+[2026-07-09 13:14:05] Scheduled from 13:14:05: first=13:18:05, repeat every 60s, deadline=13:24:05 (screenshot captured)
+[2026-07-09 13:18:02] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 13:18:03] Scheduled from 13:14:05: predict 435s, alert at 13:20:20 (startup resume)
+[2026-07-09 13:20:20] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:20:20] Popup launched (PID 10464)
+[2026-07-09 13:20:20] Single alert shown (predicted 435s interval)
+[2026-07-09 13:22:21] Scheduled from 13:22:21: predict 435s, alert at 13:28:36 (screenshot captured)
+[2026-07-09 13:28:03] Scheduled from 13:28:03: predict 378s, alert at 13:33:21 (screenshot captured)
+[2026-07-09 13:33:21] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:33:21] Popup launched (PID 2104)
+[2026-07-09 13:33:21] Single alert shown (predicted 378s interval)
+[2026-07-09 13:33:42] Scheduled from 13:33:41: predict 342s, alert at 13:38:23 (screenshot captured)
+[2026-07-09 13:36:09] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 13:36:09] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 13:36:38] Showing warning: TEST: If you see this popup, alerts are working correctly.
+[2026-07-09 13:36:38] Popup launched (PID 21280)
+[2026-07-09 13:37:02] [watchdog] Watcher not running - restarting
+[2026-07-09 13:37:02] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 13:37:03] Scheduled from 13:33:41: predict 342s, alert at 13:38:23 (startup resume)
+[2026-07-09 13:38:24] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 13:38:24] Popup launched (PID 18068)
+[2026-07-09 13:38:24] Single alert shown (predicted 342s interval)
+[2026-07-09 14:07:03] Heartbeat: watcher alive (PID 21236)
+[2026-07-09 14:23:04] Monitoring active
+[2026-07-09 14:23:04] Monitoring active
+[2026-07-09 14:23:14] Scheduled from 14:23:14: predict 435s, alert at 14:29:29 (screenshot captured)
+[2026-07-09 14:29:30] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 14:29:30] Popup launched (PID 10356)
+[2026-07-09 14:29:30] Single alert shown (predicted 435s interval)
+[2026-07-09 14:30:28] Scheduled from 14:30:27: predict 433s, alert at 14:36:40 (screenshot captured)
+[2026-07-09 14:36:41] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 14:36:41] Popup launched (PID 21420)
+[2026-07-09 14:36:41] Single alert shown (predicted 433s interval)
+[2026-07-09 14:37:03] Heartbeat: watcher alive (PID 21236)
+[2026-07-09 14:38:57] Scheduled from 14:38:57: predict 433s, alert at 14:45:10 (screenshot captured)
+[2026-07-09 14:43:48] Showing warning: TEST: Alerts are working. This popup will auto-close in 10 seconds.
+[2026-07-09 14:43:48] Popup launched (PID 16196)
+[2026-07-09 14:45:10] Showing warning: Screenshot in about 1 minute! Switch to a safe window now.
+[2026-07-09 14:45:10] Popup launched (PID 13036)
+[2026-07-09 14:45:10] Single alert shown (predicted 433s interval)
+[2026-07-09 14:45:19] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 14:45:20] Scheduled from 14:38:57: predict 433s, alert at 14:45:10 (startup resume)
+[2026-07-09 14:45:20] Startup: showing missed single alert now
+[2026-07-09 14:45:20] Showing warning: TeamLens may capture your screen in about 1 minute.
+
+Please switch to your work window now.
+
+This alert closes automatically in 10 seconds.
+[2026-07-09 14:45:20] Popup launched (PID 8596)
+[2026-07-09 14:48:53] Scheduled from 14:48:53: predict 509s, alert at 14:56:22 (screenshot captured)
+[2026-07-09 14:51:16] Showing warning: TEST: Alerts are working. This popup will auto-close in 10 seconds.
+[2026-07-09 14:51:16] Popup launched (PID 12064)
+[2026-07-09 14:54:17] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 14:54:17] Scheduled from 14:48:53: predict 509s, alert at 14:56:22 (startup resume)
+[2026-07-09 14:56:22] Showing warning popup
+[2026-07-09 14:56:22] Popup launched (PID 15736)
+[2026-07-09 14:56:22] Single alert shown (predicted 509s interval)
+[2026-07-09 14:58:09] Scheduled from 14:58:08: predict 556s, alert at 15:06:24 (screenshot captured)
+[2026-07-09 15:01:51] Showing warning popup
+[2026-07-09 15:01:51] Popup launched (PID 8224)
+[2026-07-09 15:02:59] Startup task installed: TeamLens-SS-Warning
+[2026-07-09 15:02:59] Watchdog task installed: TeamLens-SS-Warning-Watchdog (every 5 min)
+[2026-07-09 15:03:00] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 15:03:00] Scheduled from 14:58:08: predict 556s, alert at 15:06:24 (startup resume)
+[2026-07-09 15:03:11] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 15:03:11] Scheduled from 14:58:08: predict 556s, alert at 15:06:24 (startup resume)
+[2026-07-09 15:06:24] Showing warning popup
+[2026-07-09 15:06:25] Popup launched (PID 20880)
+[2026-07-09 15:06:25] Single alert shown (predicted 556s interval)
+[2026-07-09 15:08:06] Scheduled from 15:08:05: predict 556s, alert at 15:16:21 (screenshot captured)
+[2026-07-09 15:13:08] Scheduled from 15:13:08: predict 556s, alert at 15:21:24 (screenshot captured)
+[2026-07-09 15:18:18] === SS Warning v4 started (one smart alert, warn 60s before predicted shot) ===
+[2026-07-09 15:18:19] Scheduled from 15:13:08: predict 556s, alert at 15:17:08 (earliest-safe, startup resume)
+[2026-07-09 15:18:20] Startup: showing missed single alert now
+[2026-07-09 15:18:20] Showing warning popup
+[2026-07-09 15:18:20] Popup launched (PID 22468)
+[2026-07-09 15:21:34] Scheduled from 15:21:33: predict 556s, alert at 15:25:33 (earliest-safe, screenshot captured)
+[2026-07-09 15:25:34] Showing warning popup
+[2026-07-09 15:25:36] Popup launched (PID 17244)
+[2026-07-09 15:25:38] Single alert shown (predicted 556s interval)
+[2026-07-09 15:27:57] === SS Warning v5 started (early + final alerts, 30s auto-close) ===
+[2026-07-09 15:28:01] Showing final warning popup
+[2026-07-09 15:28:01] Popup launched (PID 22396)
+[2026-07-09 15:29:25] === SS Warning v5 started (early + final alerts, 30s auto-close) ===
+[2026-07-09 15:30:28] === SS Warning v5 started (early + final alerts, 30s auto-close) ===
+[2026-07-09 15:30:29] Scheduled from 15:29:25: early=15:33:25, final=15:36:51, predict=506s (startup resume)
+[2026-07-09 15:33:25] Showing early warning popup
+[2026-07-09 15:33:25] Popup launched (PID 1596)
+[2026-07-09 15:33:25] Early alert shown
+[2026-07-09 15:36:21] Scheduled from 15:36:20: early=15:40:20, final=15:43:11, predict=471s (screenshot captured)
+[2026-07-09 15:39:17] Showing final warning popup
+[2026-07-09 15:39:17] Popup launched (PID 8416)
+[2026-07-09 15:40:21] Showing early warning popup
+[2026-07-09 15:40:21] Popup launched (PID 22092)
+[2026-07-09 15:40:21] Early alert shown
+[2026-07-09 15:42:30] === SS Warning v5 started (early + final alerts, 30s auto-close) ===
+[2026-07-09 15:42:31] Startup: restored schedule early=15:40:20 final=15:43:11
+[2026-07-09 15:42:35] Showing final alert dialog
+[2026-07-09 15:42:35] Alert dialog launched (PID 7956)
+[2026-07-09 15:43:11] Showing final alert dialog
+[2026-07-09 15:43:13] Alert dialog launched (PID 10548)
+[2026-07-09 15:43:14] Final alert shown (predicted 471s)
+[2026-07-09 15:44:07] Scheduled from 15:44:07: early=15:48:07, final=15:50:54, predict=467s (screenshot captured)
+[2026-07-09 15:48:08] Showing early alert dialog
+[2026-07-09 15:48:13] Alert dialog launched (PID 6028)
+[2026-07-09 15:48:14] Early alert shown
+[2026-07-09 15:49:48] Scheduled from 15:49:48: early=15:53:48, final=15:56:35, predict=467s (screenshot captured)
+[2026-07-09 15:53:48] Showing early alert dialog
+[2026-07-09 15:53:50] Alert dialog launched (PID 2916)
+[2026-07-09 15:53:51] Early alert shown
+[2026-07-09 15:56:35] Showing final alert dialog
+[2026-07-09 15:56:35] Alert dialog launched (PID 6364)
+[2026-07-09 15:56:35] Final alert shown (predicted 467s)
+[2026-07-09 15:59:04] Scheduled from 15:59:03: early=16:03:03, final=16:05:50, predict=467s (screenshot captured)
+[2026-07-09 16:03:03] Showing early alert dialog
+[2026-07-09 16:03:03] Alert dialog launched (PID 1820)
+[2026-07-09 16:03:04] Early alert shown
+[2026-07-09 16:05:50] Showing final alert dialog
+[2026-07-09 16:05:50] Alert dialog launched (PID 9540)
+[2026-07-09 16:05:50] Final alert shown (predicted 467s)
+[2026-07-09 16:07:48] Scheduled from 16:07:48: early=16:11:48, final=16:14:35, predict=467s (screenshot captured)
+[2026-07-09 16:11:48] Showing early alert dialog
+[2026-07-09 16:11:48] Alert dialog launched (PID 9644)
+[2026-07-09 16:11:48] Early alert shown
+[2026-07-09 16:12:31] Heartbeat: watcher alive (PID 18388)
+[2026-07-09 16:14:35] Showing final alert dialog
+[2026-07-09 16:14:35] Alert dialog launched (PID 16380)
+[2026-07-09 16:14:35] Final alert shown (predicted 467s)
+[2026-07-09 16:16:43] Scheduled from 16:16:42: early=16:20:42, final=16:24:27, predict=525s (screenshot captured)
+[2026-07-09 16:20:42] Showing early alert dialog
+[2026-07-09 16:20:42] Alert dialog launched (PID 3760)
+[2026-07-09 16:20:42] Early alert shown
+[2026-07-09 16:24:27] Showing final alert dialog
+[2026-07-09 16:24:27] Alert dialog launched (PID 4812)
+[2026-07-09 16:24:27] Final alert shown (predicted 525s)
+[2026-07-09 16:26:19] Scheduled from 16:26:19: early=16:30:19, final=16:34:13, predict=534s (screenshot captured)
+[2026-07-09 16:30:19] Showing early alert dialog
+[2026-07-09 16:30:19] Alert dialog launched (PID 20176)
+[2026-07-09 16:30:19] Early alert shown
+[2026-07-09 16:34:13] Showing final alert dialog
+[2026-07-09 16:34:13] Alert dialog launched (PID 19884)
+[2026-07-09 16:34:13] Final alert shown (predicted 534s)
+[2026-07-09 16:35:50] Scheduled from 16:35:50: early=16:39:50, final=16:44:05, predict=555s (screenshot captured)
+[2026-07-09 16:39:50] Showing early alert dialog
+[2026-07-09 16:39:50] Alert dialog launched (PID 13764)
+[2026-07-09 16:39:50] Early alert shown
+[2026-07-09 16:42:32] Heartbeat: watcher alive (PID 18388)
+[2026-07-09 16:43:59] Scheduled from 16:43:59: early=16:47:59, final=16:51:53, predict=534s (screenshot captured)
+[2026-07-09 16:48:00] Showing early alert dialog
+[2026-07-09 16:48:00] Alert dialog launched (PID 5384)
+[2026-07-09 16:48:00] Early alert shown
+[2026-07-09 16:51:53] Showing final alert dialog
+[2026-07-09 16:51:53] Alert dialog launched (PID 7012)
+[2026-07-09 16:51:53] Final alert shown (predicted 534s)
+[2026-07-09 16:53:55] Scheduled from 16:53:55: early=16:57:55, final=17:02:26, predict=571s (screenshot captured)
+[2026-07-09 16:57:55] Showing early alert dialog
+[2026-07-09 16:57:55] Alert dialog launched (PID 18796)
+[2026-07-09 16:57:56] Early alert shown
+[2026-07-09 17:02:26] Showing final alert dialog
+[2026-07-09 17:02:26] Alert dialog launched (PID 21364)
+[2026-07-09 17:02:26] Final alert shown (predicted 571s)
+[2026-07-09 17:03:45] Scheduled from 17:03:44: early=17:07:44, final=17:12:20, predict=576s (screenshot captured)
+[2026-07-09 17:07:45] Showing early alert dialog
+[2026-07-09 17:07:45] Alert dialog launched (PID 6148)
+[2026-07-09 17:07:45] Early alert shown
+[2026-07-09 17:12:20] Showing final alert dialog
+[2026-07-09 17:12:20] Alert dialog launched (PID 13292)
+[2026-07-09 17:12:20] Final alert shown (predicted 576s)
+[2026-07-09 17:12:32] Heartbeat: watcher alive (PID 18388)
+[2026-07-09 17:13:15] Scheduled from 17:13:14: early=17:17:14, final=17:21:45, predict=571s (screenshot captured)
+[2026-07-09 17:17:14] Showing early alert dialog
+[2026-07-09 17:17:14] Alert dialog launched (PID 11276)
+[2026-07-09 17:17:14] Early alert shown
+[2026-07-09 17:19:42] Scheduled from 17:19:42: early=17:23:42, final=17:28:12, predict=570s (screenshot captured)
+[2026-07-09 17:23:42] Showing early alert dialog
+[2026-07-09 17:23:42] Alert dialog launched (PID 19640)
+[2026-07-09 17:23:42] Early alert shown
+[2026-07-09 17:27:24] Scheduled from 17:27:23: early=17:31:23, final=17:35:53, predict=570s (screenshot captured)
+[2026-07-09 17:31:24] Showing early alert dialog
+[2026-07-09 17:31:24] Alert dialog launched (PID 4744)
+[2026-07-09 17:31:24] Early alert shown
+[2026-07-09 17:35:53] Scheduled from 17:35:53: early=17:39:53, final=17:43:22, predict=509s (screenshot captured)
+[2026-07-09 17:39:53] Showing early alert dialog
+[2026-07-09 17:39:53] Alert dialog launched (PID 20684)
+[2026-07-09 17:39:53] Early alert shown
+[2026-07-09 17:42:32] Heartbeat: watcher alive (PID 18388)
+[2026-07-09 17:43:22] Showing final alert dialog
+[2026-07-09 17:43:22] Alert dialog launched (PID 16676)
+[2026-07-09 17:43:22] Final alert shown (predicted 509s)
+[2026-07-09 17:44:57] Scheduled from 17:44:57: early=17:48:57, final=17:52:26, predict=509s (screenshot captured)
+[2026-07-09 17:48:57] Showing early alert dialog
+[2026-07-09 17:48:57] Alert dialog launched (PID 14656)
+[2026-07-09 17:48:57] Early alert shown
+[2026-07-09 17:51:59] Scheduled from 17:51:59: early=17:55:59, final=17:58:40, predict=461s (screenshot captured)
+[2026-07-09 17:55:59] Showing early alert dialog
+[2026-07-09 17:56:00] Alert dialog launched (PID 8136)
+[2026-07-09 17:56:01] Early alert shown
+[2026-07-09 17:57:40] Scheduled from 17:57:39: early=18:01:39, final=18:04:20, predict=461s (screenshot captured)
+[2026-07-09 18:01:40] Showing early alert dialog
+[2026-07-09 18:01:40] Alert dialog launched (PID 3696)
+[2026-07-09 18:01:40] Early alert shown
+[2026-07-09 18:04:21] Showing final alert dialog
+[2026-07-09 18:04:21] Alert dialog launched (PID 6176)
+[2026-07-09 18:04:21] Final alert shown (predicted 461s)
+[2026-07-09 18:04:56] Scheduled from 18:04:56: early=18:08:56, final=18:11:12, predict=436s (screenshot captured)
+[2026-07-09 18:08:56] Showing early alert dialog
+[2026-07-09 18:08:56] Alert dialog launched (PID 700)
+[2026-07-09 18:08:56] Early alert shown
+[2026-07-09 18:11:12] Showing final alert dialog
+[2026-07-09 18:11:12] Alert dialog launched (PID 18700)
+[2026-07-09 18:11:12] Final alert shown (predicted 436s)
+[2026-07-09 18:12:32] Heartbeat: watcher alive (PID 18388)
+[2026-07-09 18:13:55] Scheduled from 18:13:54: early=18:17:54, final=18:20:10, predict=436s (screenshot captured)
+[2026-07-09 18:17:54] Showing early alert dialog
+[2026-07-09 18:17:54] Alert dialog launched (PID 1088)
+[2026-07-09 18:17:54] Early alert shown
+[2026-07-09 18:19:23] Scheduled from 18:19:23: early=18:23:23, final=18:25:26, predict=423s (screenshot captured)
+[2026-07-09 18:23:23] Showing early alert dialog
+[2026-07-09 18:23:23] Alert dialog launched (PID 21372)
+[2026-07-09 18:23:23] Early alert shown
+[2026-07-09 18:25:26] Showing final alert dialog
+[2026-07-09 18:25:26] Alert dialog launched (PID 21144)
+[2026-07-09 18:25:26] Final alert shown (predicted 423s)
+[2026-07-09 18:25:55] Scheduled from 18:25:55: early=18:29:55, final=18:31:27, predict=392s (screenshot captured)
+[2026-07-09 18:29:55] Showing early alert dialog
+[2026-07-09 18:29:55] Alert dialog launched (PID 6544)
+[2026-07-09 18:29:55] Early alert shown
+[2026-07-09 18:30:01] Stopped previous instance (PID 18388)
+[2026-07-09 18:30:03] === SS Warning v6 started (activity.js + scheduler.js policy, 30s auto-close) ===
+[2026-07-09 18:30:04] Activity: active (idle 0s, threshold 300s)
+[2026-07-09 18:31:29] Stopped previous instance (PID 11184)
+[2026-07-09 18:31:29] === SS Warning v6 started (activity.js + scheduler.js policy, 30s auto-close) ===
+[2026-07-09 18:31:36] Activity: active (idle 0s, threshold 300s)
+[2026-07-09 18:33:08] Scheduled from 06:33 pm: early=06:37 pm, final=06:42 pm, window=06:38 pm – 06:43 pm (queue-index.json)
+[2026-07-09 18:33:08] Scheduled from 06:33 pm: early=06:37 pm, final=06:42 pm, window=06:38 pm – 06:43 pm (main.log)
+[2026-07-09 18:33:13] Stopped previous instance (PID 8580)
+[2026-07-09 18:33:15] === SS Warning v6 started (activity.js + scheduler.js policy, 30s auto-close) ===
+[2026-07-09 18:33:15] Startup: restored schedule early=06:37 pm final=06:42 pm window=06:38 pm – 06:43 pm
+[2026-07-09 18:33:16] Activity: active (idle 16s, threshold 300s)
+[2026-07-09 18:37:08] Showing early alert dialog
+[2026-07-09 18:37:08] Alert dialog launched (PID 16080)
+[2026-07-09 18:37:08] Early alert shown
+[2026-07-09 18:40:29] Scheduled from 06:40 pm: early=06:44 pm, final=06:49 pm, window=06:45 pm – 06:50 pm (queue-index.json)
+[2026-07-09 18:40:29] Scheduled from 06:40 pm: early=06:44 pm, final=06:49 pm, window=06:45 pm – 06:50 pm (main.log)
+[2026-07-09 18:44:29] Showing early alert dialog
+[2026-07-09 18:44:29] Alert dialog launched (PID 18128)
+[2026-07-09 18:44:29] Early alert shown
+[2026-07-09 18:49:01] Scheduled from 06:49 pm: early=06:53 pm, final=06:58 pm, window=06:54 pm – 06:59 pm (queue-index.json)
+[2026-07-09 18:49:01] Scheduled from 06:49 pm: early=06:53 pm, final=06:58 pm, window=06:54 pm – 06:59 pm (main.log)
+[2026-07-09 18:53:02] Showing early alert dialog
+[2026-07-09 18:53:02] Alert dialog launched (PID 3416)
+[2026-07-09 18:53:02] Early alert shown
+[2026-07-09 18:53:45] Activity tracker started (agent)
+[2026-07-09 18:53:45] Monitoring active
+[2026-07-09 18:53:45] Monitoring active
+[2026-07-09 18:53:54] Scheduled from 06:53 pm: early=06:57 pm, final=07:02 pm, window=06:58 pm – 07:03 pm (queue-index.json)
+[2026-07-09 18:53:54] Scheduled from 06:53 pm: early=06:57 pm, final=07:02 pm, window=06:58 pm – 07:03 pm (main.log)
+[2026-07-09 18:56:15] Activity tracker started (agent)
+[2026-07-09 18:56:15] Monitoring active
+[2026-07-09 18:56:15] Monitoring active
+[2026-07-09 18:57:55] Showing early alert dialog
+[2026-07-09 18:57:55] Alert dialog launched (PID 12444)
+[2026-07-09 18:57:55] Early alert shown
+[2026-07-09 18:58:18] Activity tracker started (agent)
+[2026-07-09 18:58:18] Monitoring active
+[2026-07-09 18:58:18] Monitoring active
+[2026-07-09 18:58:31] Scheduled from 06:58 pm: early=07:02 pm, final=07:07 pm, window=07:03 pm – 07:08 pm (queue-index.json)
+[2026-07-09 18:58:31] Scheduled from 06:58 pm: early=07:02 pm, final=07:07 pm, window=07:03 pm – 07:08 pm (main.log)
+[2026-07-09 19:00:36] Activity tracker stopped (agent)
+[2026-07-09 19:00:36] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:00:36] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:00:45] Activity tracker started (agent)
+[2026-07-09 19:00:45] Monitoring active
+[2026-07-09 19:00:45] Monitoring active
+[2026-07-09 19:03:16] Heartbeat: watcher alive (PID 9916)
+[2026-07-09 19:04:49] Activity tracker started (agent)
+[2026-07-09 19:04:49] Monitoring active
+[2026-07-09 19:06:17] Startup task installed: TeamLens-SS-Warning (node v6)
+[2026-07-09 19:06:17] Watchdog task installed: TeamLens-SS-Warning-Watchdog (every 5 min)
+[2026-07-09 19:06:17] Stopped previous instance (PID 9916)
+[2026-07-09 19:06:18] === SS Warning v6 started (activity.js + scheduler.js policy) ===
+[2026-07-09 19:06:18] EXACT next SS at 07:11 pm (patch active, warn 07:10 pm)
+[2026-07-09 19:06:18] Startup: restored schedule early=07:02 pm final=07:07 pm window=07:03 pm – 07:08 pm
+[2026-07-09 19:06:19] Activity: active (idle 0s, threshold 300s)
+[2026-07-09 19:06:28] Activity tracker stopped (agent)
+[2026-07-09 19:06:28] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:06:28] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:07:55] EXACT next SS at 07:08 pm (patch active, warn 07:07 pm)
+[2026-07-09 19:07:56] Activity tracker started (agent)
+[2026-07-09 19:07:56] Monitoring active
+[2026-07-09 19:07:56] Showing EXACT alert for 07:08 pm
+[2026-07-09 19:07:56] EXACT alert launched (PID 6292)
+[2026-07-09 19:08:09] Scheduled from 07:08 pm: early=07:12 pm, final=07:17 pm, window=07:13 pm to 07:18 pm (queue-index.json)
+[2026-07-09 19:08:09] EXACT next SS at 07:16 pm (patch active, warn 07:15 pm)
+[2026-07-09 19:08:09] Scheduled from 07:08 pm: early=07:12 pm, final=07:17 pm, window=07:13 pm to 07:18 pm (main.log)
+[2026-07-09 19:09:58] EXACT next SS at 07:10 pm (patch active, warn 07:09 pm)
+[2026-07-09 19:09:58] Activity tracker started (agent)
+[2026-07-09 19:09:58] Monitoring active
+[2026-07-09 19:09:58] Showing EXACT alert for 07:10 pm
+[2026-07-09 19:09:58] EXACT alert launched (PID 9888)
+[2026-07-09 19:10:13] EXACT next SS at 07:15 pm (patch active, warn 07:14 pm)
+[2026-07-09 19:10:59] EXACT next SS at 07:11 pm (patch active, warn 07:10 pm)
+[2026-07-09 19:11:00] Activity tracker started (agent)
+[2026-07-09 19:11:00] Monitoring active
+[2026-07-09 19:11:00] Showing EXACT alert for 07:11 pm
+[2026-07-09 19:11:00] EXACT alert launched (PID 2328)
+[2026-07-09 19:11:12] Scheduled from 07:11 pm: early=07:15 pm, final=07:20 pm, window=07:16 pm to 07:21 pm (queue-index.json)
+[2026-07-09 19:11:12] EXACT next SS at 07:17 pm (patch active, warn 07:16 pm)
+[2026-07-09 19:11:12] Scheduled from 07:11 pm: early=07:15 pm, final=07:20 pm, window=07:16 pm to 07:21 pm (main.log)
+[2026-07-09 19:16:57] Showing EXACT alert for 07:17 pm
+[2026-07-09 19:16:57] EXACT alert launched (PID 4548)
+[2026-07-09 19:17:58] Showing early alert dialog
+[2026-07-09 19:17:58] Alert dialog launched (PID 14400)
+[2026-07-09 19:17:58] Early alert shown
+[2026-07-09 19:18:32] Scheduled from 07:18 pm: early=07:22 pm, final=07:27 pm, window=07:23 pm to 07:28 pm (queue-index.json)
+[2026-07-09 19:18:32] EXACT next SS at 07:24 pm (patch active, warn 07:23 pm)
+[2026-07-09 19:18:33] Scheduled from 07:18 pm: early=07:22 pm, final=07:27 pm, window=07:23 pm to 07:28 pm (main.log)
+[2026-07-09 19:23:07] Showing EXACT alert for 07:24 pm
+[2026-07-09 19:23:07] EXACT alert launched (PID 7148)
+[2026-07-09 19:24:07] Showing early alert dialog
+[2026-07-09 19:24:07] Alert dialog launched (PID 9416)
+[2026-07-09 19:24:07] Early alert shown
+[2026-07-09 19:24:21] Scheduled from 07:24 pm: early=07:28 pm, final=07:33 pm, window=07:29 pm to 07:34 pm (main.log)
+[2026-07-09 19:24:21] EXACT next SS at 07:33 pm (patch active, warn 07:32 pm)
+[2026-07-09 19:32:03] Showing EXACT alert for 07:33 pm
+[2026-07-09 19:32:03] EXACT alert launched (PID 16680)
+[2026-07-09 19:33:03] Showing early alert dialog
+[2026-07-09 19:33:03] Alert dialog launched (PID 12304)
+[2026-07-09 19:33:03] Early alert shown
+[2026-07-09 19:33:07] Scheduled from 07:33 pm: early=07:37 pm, final=07:42 pm, window=07:38 pm to 07:43 pm (main.log)
+[2026-07-09 19:33:07] EXACT next SS at 07:40 pm (patch active, warn 07:39 pm)
+[2026-07-09 19:33:07] Scheduled from 07:33 pm: early=07:37 pm, final=07:42 pm, window=07:38 pm to 07:43 pm (queue-index.json)
+[2026-07-09 19:36:18] Heartbeat: watcher alive (PID 3436) EXACT next 07:40 pm
+[2026-07-09 19:39:23] Showing EXACT alert for 07:40 pm
+[2026-07-09 19:39:23] EXACT alert launched (PID 21852)
+[2026-07-09 19:39:38] Activity tracker stopped (agent)
+[2026-07-09 19:39:38] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:39:38] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:39:59] EXACT next SS at 07:40 pm (patch active, warn 07:39 pm)
+[2026-07-09 19:40:00] Activity tracker started (agent)
+[2026-07-09 19:40:00] Monitoring active
+[2026-07-09 19:40:00] Showing EXACT alert for 07:40 pm
+[2026-07-09 19:40:00] EXACT alert launched (PID 9548)
+[2026-07-09 19:40:17] Scheduled from 07:40 pm: early=07:44 pm, final=07:49 pm, window=07:45 pm to 07:50 pm (queue-index.json)
+[2026-07-09 19:40:17] EXACT next SS at 07:45 pm (patch active, warn 07:44 pm)
+[2026-07-09 19:40:18] Scheduled from 07:40 pm: early=07:44 pm, final=07:49 pm, window=07:45 pm to 07:50 pm (main.log)
+[2026-07-09 19:44:39] Showing EXACT alert for 07:45 pm
+[2026-07-09 19:44:39] EXACT alert launched (PID 17400)
+[2026-07-09 19:45:39] Showing early alert dialog
+[2026-07-09 19:45:39] Alert dialog launched (PID 9476)
+[2026-07-09 19:45:39] Early alert shown
+[2026-07-09 19:45:42] Scheduled from 07:45 pm: early=07:49 pm, final=07:54 pm, window=07:50 pm to 07:55 pm (queue-index.json)
+[2026-07-09 19:45:42] EXACT next SS at 07:55 pm (patch active, warn 07:54 pm)
+[2026-07-09 19:45:42] Scheduled from 07:45 pm: early=07:49 pm, final=07:54 pm, window=07:50 pm to 07:55 pm (main.log)
+[2026-07-09 19:46:15] Activity tracker stopped (agent)
+[2026-07-09 19:46:15] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:46:15] Warning cancelled (monitoring paused/stopped)
+[2026-07-09 19:52:22] Activity: idle (idle 303s, threshold 300s)
+[2026-07-09 20:06:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 20:36:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 21:06:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 21:36:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 21:53:04] Activity: active (idle 0s, threshold 300s)
+[2026-07-09 21:53:09] Activity: idle (idle 7550s, threshold 300s)
+[2026-07-09 22:06:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 22:36:19] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 23:06:20] Heartbeat: watcher alive (PID 3436)
+[2026-07-09 23:36:20] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 00:06:20] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 00:36:20] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 00:53:53] Activity: active (idle 0s, threshold 300s)
+[2026-07-10 00:53:58] Activity: idle (idle 18399s, threshold 300s)
+[2026-07-10 01:06:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 01:36:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 02:06:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 02:36:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 03:06:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 03:36:21] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 04:06:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 04:36:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 05:06:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 05:36:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 06:06:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 06:36:22] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 07:06:23] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 07:36:23] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 08:06:23] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 08:36:24] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 09:06:24] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 09:36:25] Heartbeat: watcher alive (PID 3436)
+[2026-07-10 09:44:25] Activity: active (idle 0s, threshold 300s)
+[2026-07-10 09:45:04] EXACT next SS at 09:45 am (patch active, warn 09:44 am)
+[2026-07-10 09:45:04] Activity tracker started (agent)
+[2026-07-10 09:45:04] Monitoring active
+[2026-07-10 09:45:04] Showing EXACT alert for 09:45 am
+[2026-07-10 09:45:05] EXACT alert launched (PID 14176)
+[2026-07-10 09:45:17] Scheduled from 09:45 am: early=09:49 am, final=09:54 am, window=09:50 am to 09:55 am (queue-index.json)
+[2026-07-10 09:45:17] EXACT next SS at 09:53 am (patch active, warn 09:52 am)
+[2026-07-10 09:45:17] Scheduled from 09:45 am: early=09:49 am, final=09:54 am, window=09:50 am to 09:55 am (main.log)
+[2026-07-10 09:52:09] Showing EXACT alert for 09:53 am
+[2026-07-10 09:52:09] EXACT alert launched (PID 13508)
+[2026-07-10 09:53:09] Showing early alert dialog
+[2026-07-10 09:53:10] Alert dialog launched (PID 18108)
+[2026-07-10 09:53:10] Early alert shown
+[2026-07-10 09:53:16] Scheduled from 09:53 am: early=09:57 am, final=10:02 am, window=09:58 am to 10:03 am (main.log)
+[2026-07-10 09:53:16] EXACT next SS at 09:59 am (patch active, warn 09:58 am)
+[2026-07-10 09:53:17] Scheduled from 09:53 am: early=09:57 am, final=10:02 am, window=09:58 am to 10:03 am (queue-index.json)
+[2026-07-10 09:57:52] Activity tracker stopped (agent)
+[2026-07-10 09:57:52] Warning cancelled (monitoring paused/stopped)
+[2026-07-10 09:57:52] Warning cancelled (monitoring paused/stopped)
+[2026-07-10 09:58:32] Activity tracker started (agent)
+[2026-07-10 09:58:32] Monitoring active
+[2026-07-10 09:58:32] EXACT next SS at 09:58 am (patch active, warn 09:57 am)
+[2026-07-10 09:58:32] Showing EXACT alert for 09:58 am
+[2026-07-10 09:58:32] EXACT alert launched (PID 4592)
+[2026-07-10 09:58:33] Showing EXACT alert for 09:58 am
+[2026-07-10 09:58:33] EXACT alert launched (PID 15044)
+[2026-07-10 09:58:48] Scheduled from 09:58 am: early=10:02 am, final=10:07 am, window=10:03 am to 10:08 am (main.log)
+[2026-07-10 09:58:48] EXACT next SS at 10:03 am (patch active, warn 10:02 am)
+[2026-07-10 09:58:48] Scheduled from 09:58 am: early=10:02 am, final=10:07 am, window=10:03 am to 10:08 am (queue-index.json)
+[2026-07-10 09:59:54] Activity tracker started (agent)
+[2026-07-10 09:59:55] Monitoring active
+[2026-07-10 09:59:55] Monitoring active
+[2026-07-10 10:00:05] Scheduled from 10:00 am: early=10:04 am, final=10:09 am, window=10:05 am to 10:10 am (queue-index.json)
+[2026-07-10 10:00:05] Scheduled from 10:00 am: early=10:04 am, final=10:09 am, window=10:05 am to 10:10 am (main.log)
+[2026-07-10 10:01:21] Startup task installed: TeamLens-SS-Warning (node v6)
+[2026-07-10 10:01:21] Watchdog task installed: TeamLens-SS-Warning-Watchdog (every 5 min)
+[2026-07-10 10:01:21] Stopped previous instance (PID 3436)
+[2026-07-10 10:01:22] === SS Warning v6 started (activity.js + scheduler.js policy) ===
+[2026-07-10 10:01:22] EXACT next SS at 10:03 am (patch active, warn 10:02 am)
+[2026-07-10 10:01:22] Startup: restored schedule early=10:04 am final=10:09 am window=10:05 am to 10:10 am
+[2026-07-10 10:01:22] Activity: active (idle 3s, threshold 300s)
+[2026-07-10 10:02:45] Showing EXACT alert for 10:03 am
+[2026-07-10 10:02:45] EXACT alert launched (PID 10068)
+[2026-07-10 10:04:05] Showing early alert dialog
+[2026-07-10 10:04:05] Alert dialog launched (PID 9692)
+[2026-07-10 10:04:05] Early alert shown
+[2026-07-10 10:06:34] Scheduled from 10:06 am: early=10:10 am, final=10:15 am, window=10:11 am to 10:16 am (queue-index.json)
+[2026-07-10 10:06:34] Scheduled from 10:06 am: early=10:10 am, final=10:15 am, window=10:11 am to 10:16 am (main.log)
+[2026-07-10 10:10:34] Showing early alert dialog
+[2026-07-10 10:10:34] Alert dialog launched (PID 21564)
+[2026-07-10 10:10:34] Early alert shown
+[2026-07-10 10:14:27] Scheduled from 10:14 am: early=10:18 am, final=10:23 am, window=10:19 am to 10:24 am (main.log)
+[2026-07-10 10:14:27] Scheduled from 10:14 am: early=10:18 am, final=10:23 am, window=10:19 am to 10:24 am (queue-index.json)
+[2026-07-10 10:18:28] Showing early alert dialog
+[2026-07-10 10:18:28] Alert dialog launched (PID 7680)
+[2026-07-10 10:18:28] Early alert shown
+[2026-07-10 10:21:46] Scheduled from 10:21 am: early=10:25 am, final=10:30 am, window=10:26 am to 10:31 am (queue-index.json)
+[2026-07-10 10:21:47] Scheduled from 10:21 am: early=10:25 am, final=10:30 am, window=10:26 am to 10:31 am (main.log)
+[2026-07-10 10:25:47] Showing early alert dialog
+[2026-07-10 10:25:47] Alert dialog launched (PID 18980)
+[2026-07-10 10:25:47] Early alert shown
+[2026-07-10 10:28:54] Scheduled from 10:28 am: early=10:32 am, final=10:37 am, window=10:33 am to 10:38 am (main.log)
+[2026-07-10 10:28:54] Scheduled from 10:28 am: early=10:32 am, final=10:37 am, window=10:33 am to 10:38 am (queue-index.json)
+[2026-07-10 10:31:22] Heartbeat: watcher alive (PID 11916) next window 10:33 am to 10:38 am, phase early
+[2026-07-10 10:32:56] Showing early alert dialog
+[2026-07-10 10:32:56] Alert dialog launched (PID 20256)
+[2026-07-10 10:32:56] Early alert shown
+[2026-07-10 10:35:21] Scheduled from 10:35 am: early=10:39 am, final=10:44 am, window=10:40 am to 10:45 am (queue-index.json)
+[2026-07-10 10:35:21] Scheduled from 10:35 am: early=10:39 am, final=10:44 am, window=10:40 am to 10:45 am (main.log)
+[2026-07-10 10:39:21] Showing early alert dialog
+[2026-07-10 10:39:21] Alert dialog launched (PID 4636)
+[2026-07-10 10:39:21] Early alert shown
+[2026-07-10 10:44:21] Showing final alert dialog
+[2026-07-10 10:44:21] Alert dialog launched (PID 4496)
+[2026-07-10 10:44:21] Final alert shown
+[2026-07-10 10:45:15] Scheduled from 10:45 am: early=10:49 am, final=10:54 am, window=10:50 am to 10:55 am (queue-index.json)
+[2026-07-10 10:45:15] Scheduled from 10:45 am: early=10:49 am, final=10:54 am, window=10:50 am to 10:55 am (main.log)
+[2026-07-10 10:49:16] Showing early alert dialog
+[2026-07-10 10:49:16] Alert dialog launched (PID 20016)
+[2026-07-10 10:49:16] Early alert shown
+[2026-07-10 10:54:15] Showing final alert dialog
+[2026-07-10 10:54:15] Alert dialog launched (PID 15900)
+[2026-07-10 10:54:15] Final alert shown
+[2026-07-10 10:54:59] Scheduled from 10:54 am: early=10:58 am, final=11:03 am, window=10:59 am to 11:04 am (queue-index.json)
+[2026-07-10 10:54:59] Scheduled from 10:54 am: early=10:58 am, final=11:03 am, window=10:59 am to 11:04 am (main.log)
+[2026-07-10 10:58:59] Showing early alert dialog
+[2026-07-10 10:58:59] Alert dialog launched (PID 7436)
+[2026-07-10 10:58:59] Early alert shown
+[2026-07-10 11:01:22] Heartbeat: watcher alive (PID 11916) next window 10:59 am to 11:04 am, phase final
+[2026-07-10 11:03:59] Showing final alert dialog
+[2026-07-10 11:03:59] Alert dialog launched (PID 8688)
+[2026-07-10 11:03:59] Final alert shown
+[2026-07-10 11:04:54] Scheduled from 11:04 am: early=11:08 am, final=11:13 am, window=11:09 am to 11:14 am (queue-index.json)
+[2026-07-10 11:04:54] Scheduled from 11:04 am: early=11:08 am, final=11:13 am, window=11:09 am to 11:14 am (main.log)
+[2026-07-10 11:08:54] Showing early alert dialog
+[2026-07-10 11:08:54] Alert dialog launched (PID 13896)
+[2026-07-10 11:08:54] Early alert shown
+[2026-07-10 11:10:15] Scheduled from 11:10 am: early=11:14 am, final=11:19 am, window=11:15 am to 11:20 am (queue-index.json)
+[2026-07-10 11:10:15] Scheduled from 11:10 am: early=11:14 am, final=11:19 am, window=11:15 am to 11:20 am (main.log)
+[2026-07-10 11:14:15] Showing early alert dialog
+[2026-07-10 11:14:15] Alert dialog launched (PID 20880)
+[2026-07-10 11:14:15] Early alert shown
+[2026-07-10 11:16:27] Scheduled from 11:16 am: early=11:20 am, final=11:25 am, window=11:21 am to 11:26 am (queue-index.json)
+[2026-07-10 11:16:28] Scheduled from 11:16 am: early=11:20 am, final=11:25 am, window=11:21 am to 11:26 am (main.log)
+[2026-07-10 11:20:27] Showing early alert dialog
+[2026-07-10 11:20:27] Alert dialog launched (PID 8444)
+[2026-07-10 11:20:27] Early alert shown
+[2026-07-10 11:23:39] Scheduled from 11:23 am: early=11:27 am, final=11:32 am, window=11:28 am to 11:33 am (queue-index.json)
+[2026-07-10 11:23:39] Scheduled from 11:23 am: early=11:27 am, final=11:32 am, window=11:28 am to 11:33 am (main.log)
+[2026-07-10 11:27:39] Showing early alert dialog
+[2026-07-10 11:27:39] Alert dialog launched (PID 11244)
+[2026-07-10 11:27:39] Early alert shown
+[2026-07-10 11:29:57] Scheduled from 11:29 am: early=11:33 am, final=11:38 am, window=11:34 am to 11:39 am (queue-index.json)
+[2026-07-10 11:29:57] Scheduled from 11:29 am: early=11:33 am, final=11:38 am, window=11:34 am to 11:39 am (main.log)
+[2026-07-10 11:31:23] Heartbeat: watcher alive (PID 11916) next window 11:34 am to 11:39 am, phase early
+[2026-07-10 11:33:57] Showing early alert dialog
+[2026-07-10 11:33:57] Alert dialog launched (PID 19780)
+[2026-07-10 11:33:57] Early alert shown
+[2026-07-10 11:37:19] Scheduled from 11:37 am: early=11:41 am, final=11:46 am, window=11:42 am to 11:47 am (queue-index.json)
+[2026-07-10 11:37:20] Scheduled from 11:37 am: early=11:41 am, final=11:46 am, window=11:42 am to 11:47 am (main.log)
+[2026-07-10 11:41:20] Showing early alert dialog
+[2026-07-10 11:41:20] Alert dialog launched (PID 6104)
+[2026-07-10 11:41:20] Early alert shown
+[2026-07-10 11:46:20] Showing final alert dialog
+[2026-07-10 11:46:20] Alert dialog launched (PID 14836)
+[2026-07-10 11:46:20] Final alert shown
+[2026-07-10 11:47:06] Scheduled from 11:47 am: early=11:51 am, final=11:56 am, window=11:52 am to 11:57 am (main.log)
+[2026-07-10 11:47:06] Scheduled from 11:47 am: early=11:51 am, final=11:56 am, window=11:52 am to 11:57 am (queue-index.json)
+[2026-07-10 11:51:07] Showing early alert dialog
+[2026-07-10 11:51:07] Alert dialog launched (PID 15704)
+[2026-07-10 11:51:07] Early alert shown
+[2026-07-10 11:54:31] Scheduled from 11:54 am: early=11:58 am, final=12:03 pm, window=11:59 am to 12:04 pm (queue-index.json)
+[2026-07-10 11:54:31] Scheduled from 11:54 am: early=11:58 am, final=12:03 pm, window=11:59 am to 12:04 pm (main.log)
+[2026-07-10 11:58:31] Showing early alert dialog
+[2026-07-10 11:58:31] Alert dialog launched (PID 8888)
+[2026-07-10 11:58:31] Early alert shown
+[2026-07-10 12:01:23] Heartbeat: watcher alive (PID 11916) next window 11:59 am to 12:04 pm, phase final
+[2026-07-10 12:02:37] Scheduled from 12:02 pm: early=12:06 pm, final=12:11 pm, window=12:07 pm to 12:12 pm (queue-index.json)
+[2026-07-10 12:02:38] Scheduled from 12:02 pm: early=12:06 pm, final=12:11 pm, window=12:07 pm to 12:12 pm (main.log)
+[2026-07-10 12:06:37] Showing early alert dialog
+[2026-07-10 12:06:37] Alert dialog launched (PID 16968)
+[2026-07-10 12:06:37] Early alert shown
+[2026-07-10 12:08:20] Scheduled from 12:08 pm: early=12:12 pm, final=12:17 pm, window=12:13 pm to 12:18 pm (queue-index.json)
+[2026-07-10 12:08:20] Scheduled from 12:08 pm: early=12:12 pm, final=12:17 pm, window=12:13 pm to 12:18 pm (main.log)
+[2026-07-10 12:12:20] Showing early alert dialog
+[2026-07-10 12:12:20] Alert dialog launched (PID 15616)
+[2026-07-10 12:12:20] Early alert shown
+[2026-07-10 12:14:48] Scheduled from 12:14 pm: early=12:18 pm, final=12:23 pm, window=12:19 pm to 12:24 pm (queue-index.json)
+[2026-07-10 12:14:48] Scheduled from 12:14 pm: early=12:18 pm, final=12:23 pm, window=12:19 pm to 12:24 pm (main.log)
+[2026-07-10 12:18:48] Showing early alert dialog
+[2026-07-10 12:18:48] Alert dialog launched (PID 20572)
+[2026-07-10 12:18:48] Early alert shown
+[2026-07-10 12:23:32] Scheduled from 12:23 pm: early=12:27 pm, final=12:32 pm, window=12:28 pm to 12:33 pm (queue-index.json)
+[2026-07-10 12:23:33] Scheduled from 12:23 pm: early=12:27 pm, final=12:32 pm, window=12:28 pm to 12:33 pm (main.log)
+[2026-07-10 12:27:32] Showing early alert dialog
+[2026-07-10 12:27:32] Alert dialog launched (PID 21280)
+[2026-07-10 12:27:32] Early alert shown
+[2026-07-10 12:29:20] Scheduled from 12:29 pm: early=12:33 pm, final=12:38 pm, window=12:34 pm to 12:39 pm (queue-index.json)
+[2026-07-10 12:29:21] Scheduled from 12:29 pm: early=12:33 pm, final=12:38 pm, window=12:34 pm to 12:39 pm (main.log)

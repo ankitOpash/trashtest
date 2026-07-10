@@ -1,0 +1,20 @@
+{
+  "name": "teamlens-agent",
+  "version": "1.0.9",
+  "description": "TeamLens monitoring agent",
+  "main": "src/main.js",
+  "author": "Opash Software",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "electron-log": "^5.2.0",
+    "electron-store": "^8.2.0",
+    "electron-updater": "^6.8.9"
+  },
+  "optionalDependencies": {
+    "get-windows": "^9.3.0"
+  },
+  "overrides": {
+    "@noble/hashes": "1.8.0"
+  }
+}
