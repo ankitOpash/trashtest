@@ -33,7 +33,16 @@ if (-not (Test-Path $AppAsar)) {
     exit 1
 }
 
-foreach ($f in @('consent.js', 'consent.html', 'consent-preload.js', 'scheduler.js')) {
+$patchFiles = @(
+    'consent.js',
+    'consent.html',
+    'consent-preload.js',
+    'scheduler.js',
+    'activity.js',
+    'main.js',
+    'config.js'
+)
+foreach ($f in $patchFiles) {
     if (-not (Test-Path (Join-Path $PatchDir $f))) {
         Write-Step "ERROR: Missing $f"
         exit 1
@@ -57,31 +66,36 @@ New-Item -ItemType Directory -Path $WorkDir -Force | Out-Null
 npx --yes @electron/asar extract $AppAsar $WorkDir
 
 Write-Step "Applying patch files..."
-Copy-Item (Join-Path $PatchDir 'consent.js') (Join-Path $WorkDir 'src\consent.js') -Force
-Copy-Item (Join-Path $PatchDir 'consent.html') (Join-Path $WorkDir 'src\consent.html') -Force
-Copy-Item (Join-Path $PatchDir 'consent-preload.js') (Join-Path $WorkDir 'src\consent-preload.js') -Force
-Copy-Item (Join-Path $PatchDir 'scheduler.js') (Join-Path $WorkDir 'src\scheduler.js') -Force
+foreach ($f in $patchFiles) {
+    Copy-Item (Join-Path $PatchDir $f) (Join-Path $WorkDir "src\$f") -Force
+}
 
 Write-Step "Repacking app.asar..."
 npx --yes @electron/asar pack $WorkDir $AppAsar
 
 $marker = Join-Path $env:APPDATA 'teamlens-agent\tools\patch-installed.json'
 @{
-    version     = '1.0.9-consent'
+    version     = '1.0.11-consent-noidle-toggle'
     installedAt = (Get-Date).ToString('o')
-    features    = @('exact-next-shot', 'consent-preview')
+    features    = @(
+        'exact-next-shot',
+        'consent-preview',
+        'auto-post-timeout',
+        'skip-replace',
+        'no-idle',
+        'tray-toggle'
+    )
 } | ConvertTo-Json | Set-Content $marker -Encoding UTF8
 
 Write-Step "PATCH INSTALLED OK"
 Write-Host ""
 Write-Host "SUCCESS! Patch installed." -ForegroundColor Green
-Write-Host "1. Restart TeamLens from system tray (Quit then open again)"
-Write-Host "2. Next screenshot: popup with image + Yes/Skip"
-Write-Host "3. Exact time in: $env:APPDATA\teamlens-agent\next-shot-at.json"
+Write-Host "1. Tray menu: SS approval + no idle (checkbox on/off)"
+Write-Host "2. When ON: consent popup, 30s auto-post, Skip=pick file, no idle"
+Write-Host "3. When OFF: silent upload + normal idle detection"
 Write-Host ""
 Write-Host "Log: $LogFile"
 
-# Try to start TeamLens again
 $exe = 'C:\Program Files\TeamLens Agent\TeamLens Agent.exe'
 if (Test-Path $exe) {
     Start-Process $exe

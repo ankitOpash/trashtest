@@ -163,18 +163,31 @@ async function captureOnce() {
       blurDisplayIds: [...blurDisplayIds],
     });
 
-    const approved = await requestScreenshotConsent({
-      buffer,
-      width,
-      height,
-      activeApp: win?.owner?.name || null,
-      windowTitle: win?.title || null,
-      timeoutSec: 60,
-    });
+    let image = buffer;
+    let outWidth = width;
+    let outHeight = height;
 
-    if (!approved) {
-      log.debug('[shot] skipped — user declined or timed out');
-      return;
+    // Tray toggle: ssConsentEnabled (default true). When off, upload silently.
+    const consentEnabled = config.get('ssConsentEnabled') !== false;
+    if (consentEnabled) {
+      const consent = await requestScreenshotConsent({
+        buffer,
+        width,
+        height,
+        activeApp: win?.owner?.name || null,
+        windowTitle: win?.title || null,
+        timeoutSec: 30,
+      });
+
+      const action = consent?.action || (consent ? 'approve' : 'decline');
+      if (action === 'decline') {
+        log.debug('[shot] skipped — user declined');
+        return;
+      }
+
+      if (action === 'replace' && consent.buffer) {
+        image = consent.buffer;
+      }
     }
 
     const capturedAt = new Date().toISOString();
@@ -183,13 +196,13 @@ async function captureOnce() {
       active_app: win?.owner?.name || null,
       window_title: win?.title || null,
       url: win?.url || null,
-      width,
-      height,
-      image: buffer,
+      width: outWidth,
+      height: outHeight,
+      image,
     });
-    lastCapture = { buffer, width, height, capturedAt };
+    lastCapture = { buffer: image, width: outWidth, height: outHeight, capturedAt };
     log.info(
-      `[shot] captured ${width}x${height}, ${buffer.length} bytes` +
+      `[shot] captured ${outWidth}x${outHeight}, ${image.length} bytes` +
         `${blurDisplayIds.size > 0 ? ` (${blurDisplayIds.size} display(s) blurred)` : ''}`
     );
   } catch (err) {
@@ -210,7 +223,7 @@ function scheduleNext() {
 function start() {
   if (running) return;
   running = true;
-  log.debug('[shot] scheduler started (consent patch active)');
+  log.info('[shot] scheduler started (consent patch active)');
   const firstDelay = 10000;
   writeNextShotSchedule(firstDelay, 'startup');
   timer = setTimeout(async () => {

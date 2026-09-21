@@ -61,25 +61,34 @@
 <body>
   <header>
     <h1>May I post this screenshot?</h1>
-    <p>TeamLens wants to send this image to your monitor. Review it first.</p>
+    <p>Review the image. Accept posts it. Skip lets you choose another image. No click auto-posts.</p>
   </header>
   <div class="preview-wrap">
     <img id="preview" alt="Screenshot preview" />
     <div class="meta" id="meta"></div>
   </div>
   <footer>
-    <span id="countdown">Auto-skip in 60s</span>
-    <button id="btnSkip" type="button">Skip this time</button>
+    <span id="countdown">Auto-post in 30s</span>
+    <button id="btnSkip" type="button">Skip — pick another</button>
     <button id="btnPost" type="button">Yes, post it</button>
   </footer>
   <script>
-    let left = 60;
+    let left = 30;
+    let tick = null;
     const cd = document.getElementById('countdown');
-    const tick = setInterval(() => {
-      left--;
-      cd.textContent = left > 0 ? `Auto-skip in ${left}s` : 'Skipping...';
-      if (left <= 0) clearInterval(tick);
-    }, 1000);
+
+    function startCountdown(sec) {
+      left = sec;
+      cd.textContent = `Auto-post in ${left}s`;
+      if (tick) clearInterval(tick);
+      tick = setInterval(() => {
+        left--;
+        cd.textContent = left > 0 ? `Auto-post in ${left}s` : 'Posting...';
+        if (left <= 0) clearInterval(tick);
+      }, 1000);
+    }
+
+    startCountdown(30);
 
     window.consent.onData((data) => {
       document.getElementById('preview').src = data.dataUrl;
@@ -88,15 +97,17 @@
       if (data.windowTitle) parts.push('Window: ' + data.windowTitle);
       if (data.width) parts.push(data.width + '×' + data.height);
       document.getElementById('meta').textContent = parts.join(' · ');
+      if (data.timeoutSec) startCountdown(data.timeoutSec);
     });
 
     document.getElementById('btnPost').onclick = () => {
-      clearInterval(tick);
-      window.consent.respond(true);
+      if (tick) clearInterval(tick);
+      window.consent.respond({ action: 'approve' });
     };
     document.getElementById('btnSkip').onclick = () => {
-      clearInterval(tick);
-      window.consent.respond(false);
+      if (tick) clearInterval(tick);
+      cd.textContent = 'Choose a replacement image...';
+      window.consent.respond({ action: 'replace' });
     };
   </script>
 </body>

@@ -2,14 +2,13 @@
 'use strict';
 
 // TeamLens Screenshot Warning v6
-// Uses the same policy + idle logic as TeamLens activity.js and scheduler.js.
-// Alerts are based on min/max interval window (not guessed from log gaps).
+// Uses scheduler.js policy for alert windows.
+// Idle sampling in this watcher is disabled (matches no-idle agent patch).
 
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawn, execFileSync } = require('node:child_process');
 
-const activity = require('./teamlens-activity');
 const scheduler = require('./teamlens-scheduler');
 
 const WARN_BEFORE_SEC = 60;
@@ -79,7 +78,7 @@ function writeState() {
     windowLabel: schedule.windowLabel,
     policyMinSec: schedule.policy.min,
     policyMaxSec: schedule.policy.max,
-    activityState: activity.getLastState(),
+    activityState: 'active',
   };
   fs.writeFileSync(statePath, JSON.stringify(data, null, 2), 'utf8');
 }
@@ -411,9 +410,8 @@ function startWatcher() {
 
   initFromExisting();
 
-  activity.start(policy, ({ state, idleSec, thresholdSec }) => {
-    writeLog(`Activity: ${state} (idle ${idleSec}s, threshold ${thresholdSec}s)`);
-  });
+  // Idle detection in this watcher is disabled (matches no-idle agent patch).
+  // Do not start activity sampling / idle logs here.
 
   if (fs.existsSync(queuePath)) {
     fs.watch(queuePath, { persistent: true }, () => {
@@ -450,7 +448,6 @@ function startWatcher() {
 
   const shutdown = () => {
     clearInterval(loop);
-    activity.stop();
     removePid();
     writeLog('=== SS Warning tool stopped ===');
     process.exit(0);

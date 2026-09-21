@@ -1,8 +1,12 @@
 ﻿{
     "features":  [
                      "exact-next-shot",
-                     "consent-preview"
+                     "consent-preview",
+                     "auto-post-timeout",
+                     "skip-replace",
+                     "no-idle",
+                     "tray-toggle"
                  ],
-    "version":  "1.0.9-consent",
-    "installedAt":  "2026-07-09T19:09:57.6346840+05:30"
+    "version":  "1.0.11-consent-noidle-toggle",
+    "installedAt":  "2026-07-13T18:06:28.2234930+05:30"
 }

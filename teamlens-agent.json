@@ -16,6 +16,11 @@
 	"currentProjectName": "Methaq Takaful Insurance",
 	"projects": [
 		{
+			"_id": "6a5f434180f1061b9b76f36d",
+			"name": "Cashremit",
+			"color": "#6366f1"
+		},
+		{
 			"_id": "6a4fb765892152f7ec676b8e",
 			"name": "DPS",
 			"color": "#6366f1"
@@ -23,12 +28,32 @@
 		{
 			"_id": "6a4faf4db823daa032718893",
 			"name": "Methaq Takaful Insurance",
-			"client": "Tony Naief",
+			"client": "",
 			"color": "#436ccb"
+		},
+		{
+			"_id": "6a5f434c80f1061b9b76f3b2",
+			"name": "NextHRMS",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a5f38de80f1061b9b76c0b2",
+			"name": "Ownly",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a50ca560f8e91e3bba16c7e",
+			"name": "POS",
+			"color": "#6366f1"
 		},
 		{
 			"_id": "6a4fb775892152f7ec676b98",
 			"name": "Remitzo",
+			"color": "#6366f1"
+		},
+		{
+			"_id": "6a5f433280f1061b9b76f33c",
+			"name": "Stahzin",
 			"color": "#6366f1"
 		},
 		{
@@ -39,9 +64,10 @@
 		{
 			"_id": "6a4faf67a8bcb009a60f897a",
 			"name": "eSanad",
-			"client": "Anas",
+			"client": "",
 			"color": "#e164f2"
 		}
 	],
-	"currentMemo": null
+	"currentMemo": null,
+	"ssConsentEnabled": true
 }
